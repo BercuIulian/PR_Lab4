@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Listing</title>
+</head>
+<body>
+    <h1>Products</h1>
+    <ul>
+        {% for product in products %}
+            <li><a href="/product/{{ loop.index0 }}">{{ product.name }}</a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
